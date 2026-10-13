@@ -1,0 +1,352 @@
+{
+  "rows": 582,
+  "pages": 24,
+  "missing_ot": 224,
+  "missing_years": [
+    2004
+  ],
+  "pairs": 516,
+  "excluded": 66,
+  "ties": 23,
+  "split": [
+    {
+      "part": "train",
+      "target_years": [
+        1991,
+        1992,
+        1993,
+        1994,
+        1995,
+        1996,
+        1997,
+        1998,
+        1999,
+        2000,
+        2001,
+        2002,
+        2003
+      ],
+      "rows": 338,
+      "class_1_share": 0.4911242603550296
+    },
+    {
+      "part": "validation",
+      "target_years": [
+        2006,
+        2007,
+        2008
+      ],
+      "rows": 89,
+      "class_1_share": 0.47191011235955055
+    },
+    {
+      "part": "test",
+      "target_years": [
+        2009,
+        2010,
+        2011
+      ],
+      "rows": 89,
+      "class_1_share": 0.47191011235955055
+    }
+  ],
+  "correlation": 0.5614986923361134,
+  "current_groups": [
+    {
+      "current_group": "(0.118, 0.366]",
+      "rows": 90,
+      "success_share": 0.2111111111111111,
+      "mean_current": 0.30493333333333333,
+      "mean_future": 0.36897777777777774
+    },
+    {
+      "current_group": "(0.366, 0.439]",
+      "rows": 86,
+      "success_share": 0.36046511627906974,
+      "mean_current": 0.41005813953488374,
+      "mean_future": 0.4239069767441861
+    },
+    {
+      "current_group": "(0.439, 0.512]",
+      "rows": 89,
+      "success_share": 0.5955056179775281,
+      "mean_current": 0.4794044943820225,
+      "mean_future": 0.4624943820224719
+    },
+    {
+      "current_group": "(0.512, 0.756]",
+      "rows": 73,
+      "success_share": 0.863013698630137,
+      "mean_current": 0.570917808219178,
+      "mean_future": 0.5129315068493151
+    }
+  ],
+  "history_groups": [
+    {
+      "current_group": "(0.13, 0.4]",
+      "previous_group": "Не ниже медианы",
+      "rows": 23,
+      "success_share": 0.391304347826087
+    },
+    {
+      "current_group": "(0.13, 0.4]",
+      "previous_group": "Ниже медианы",
+      "rows": 80,
+      "success_share": 0.2125
+    },
+    {
+      "current_group": "(0.4, 0.488]",
+      "previous_group": "Не ниже медианы",
+      "rows": 65,
+      "success_share": 0.5538461538461539
+    },
+    {
+      "current_group": "(0.4, 0.488]",
+      "previous_group": "Ниже медианы",
+      "rows": 45,
+      "success_share": 0.37777777777777777
+    },
+    {
+      "current_group": "(0.488, 0.756]",
+      "previous_group": "Не ниже медианы",
+      "rows": 71,
+      "success_share": 0.8732394366197183
+    },
+    {
+      "current_group": "(0.488, 0.756]",
+      "previous_group": "Ниже медианы",
+      "rows": 20,
+      "success_share": 0.65
+    }
+  ],
+  "baselines": [
+    {
+      "model": "Константа",
+      "validation_roc_auc": 0.5
+    },
+    {
+      "model": "Текущий win_rate",
+      "validation_roc_auc": 0.756838905775076
+    }
+  ],
+  "first_auc": 0.7720364741641338,
+  "experiment_auc": 0.7279635258358663,
+  "choice": {
+    "model": "Логистическая регрессия",
+    "features": [
+      "win_rate",
+      "goal_diff"
+    ],
+    "C": 1.0,
+    "solver": "lbfgs",
+    "max_iter": 1000,
+    "random_state": 42,
+    "imputer": "median (train only)",
+    "scaler": "StandardScaler (train only)",
+    "threshold": 0.5,
+    "validation_roc_auc": 0.7720364741641338,
+    "selection_rule": "Наибольший validation ROC-AUC; при равенстве исходная модель",
+    "fit_data": "train only; no refit after selection"
+  },
+  "test_metrics": [
+    {
+      "model": "Константа",
+      "ROC_AUC": 0.5,
+      "F1": 0.0,
+      "accuracy": 0.5280898876404494
+    },
+    {
+      "model": "Текущий win_rate",
+      "ROC_AUC": 0.7403748733535969,
+      "F1": 0.6521739130434783,
+      "accuracy": 0.6404494382022472
+    },
+    {
+      "model": "Логистическая регрессия",
+      "ROC_AUC": 0.7596251266464031,
+      "F1": 0.7058823529411765,
+      "accuracy": 0.6629213483146067
+    }
+  ],
+  "error_count": 30,
+  "top_errors": [
+    {
+      "team": "Boston Bruins",
+      "year": 2008,
+      "target_year": 2009,
+      "win_rate": 0.646,
+      "goal_diff": 78,
+      "previous_win_rate": 0.5,
+      "probability": 0.9092460793123841,
+      "prediction": 1,
+      "target": 0,
+      "future_win_rate": 0.476,
+      "future_median": 0.488,
+      "future_gap": -0.01200000000000001,
+      "confidence": 0.9092460793123841,
+      "error_type": "Ложный успех"
+    },
+    {
+      "team": "Phoenix Coyotes",
+      "year": 2009,
+      "target_year": 2010,
+      "win_rate": 0.61,
+      "goal_diff": 23,
+      "previous_win_rate": 0.439,
+      "probability": 0.8079764357550512,
+      "prediction": 1,
+      "target": 0,
+      "future_win_rate": 0.524,
+      "future_median": 0.524,
+      "future_gap": 0.0,
+      "confidence": 0.8079764357550512,
+      "error_type": "Ложный успех"
+    },
+    {
+      "team": "New Jersey Devils",
+      "year": 2009,
+      "target_year": 2010,
+      "win_rate": 0.585,
+      "goal_diff": 31,
+      "previous_win_rate": 0.622,
+      "probability": 0.7933183074800718,
+      "prediction": 1,
+      "target": 0,
+      "future_win_rate": 0.463,
+      "future_median": 0.524,
+      "future_gap": -0.061,
+      "confidence": 0.7933183074800718,
+      "error_type": "Ложный успех"
+    },
+    {
+      "team": "Los Angeles Kings",
+      "year": 2010,
+      "target_year": 2011,
+      "win_rate": 0.561,
+      "goal_diff": 21,
+      "previous_win_rate": 0.561,
+      "probability": 0.7429636124920898,
+      "prediction": 1,
+      "target": 0,
+      "future_win_rate": 0.488,
+      "future_median": 0.5,
+      "future_gap": -0.01200000000000001,
+      "confidence": 0.7429636124920898,
+      "error_type": "Ложный успех"
+    },
+    {
+      "team": "Buffalo Sabres",
+      "year": 2009,
+      "target_year": 2010,
+      "win_rate": 0.549,
+      "goal_diff": 28,
+      "previous_win_rate": 0.5,
+      "probability": 0.7412085921008382,
+      "prediction": 1,
+      "target": 0,
+      "future_win_rate": 0.524,
+      "future_median": 0.524,
+      "future_gap": 0.0,
+      "confidence": 0.7412085921008382,
+      "error_type": "Ложный успех"
+    }
+  ],
+  "team_example": [
+    {
+      "team": "Boston Bruins",
+      "year": 1990,
+      "wins": 44,
+      "losses": 24,
+      "ot_losses": null,
+      "win_rate": 0.55,
+      "goals_for": 299,
+      "goals_against": 264,
+      "goal_diff": 35,
+      "target_year": 1991,
+      "future_win_rate": 0.45,
+      "future_median": 0.444,
+      "target": 1,
+      "previous_win_rate": null
+    },
+    {
+      "team": "Boston Bruins",
+      "year": 1991,
+      "wins": 36,
+      "losses": 32,
+      "ot_losses": null,
+      "win_rate": 0.45,
+      "goals_for": 270,
+      "goals_against": 275,
+      "goal_diff": -5,
+      "target_year": 1992,
+      "future_win_rate": 0.607,
+      "future_median": 0.476,
+      "target": 1,
+      "previous_win_rate": 0.55
+    },
+    {
+      "team": "Boston Bruins",
+      "year": 1992,
+      "wins": 51,
+      "losses": 26,
+      "ot_losses": null,
+      "win_rate": 0.607,
+      "goals_for": 332,
+      "goals_against": 268,
+      "goal_diff": 64,
+      "target_year": 1993,
+      "future_win_rate": 0.5,
+      "future_median": 0.464,
+      "target": 1,
+      "previous_win_rate": 0.45
+    },
+    {
+      "team": "Boston Bruins",
+      "year": 1993,
+      "wins": 42,
+      "losses": 29,
+      "ot_losses": null,
+      "win_rate": 0.5,
+      "goals_for": 289,
+      "goals_against": 252,
+      "goal_diff": 37,
+      "target_year": 1994,
+      "future_win_rate": 0.562,
+      "future_median": 0.4275,
+      "target": 1,
+      "previous_win_rate": 0.607
+    },
+    {
+      "team": "Boston Bruins",
+      "year": 1994,
+      "wins": 27,
+      "losses": 18,
+      "ot_losses": null,
+      "win_rate": 0.562,
+      "goals_for": 150,
+      "goals_against": 127,
+      "goal_diff": 23,
+      "target_year": 1995,
+      "future_win_rate": 0.488,
+      "future_median": 0.433,
+      "target": 1,
+      "previous_win_rate": 0.5
+    },
+    {
+      "team": "Boston Bruins",
+      "year": 1995,
+      "wins": 40,
+      "losses": 31,
+      "ot_losses": null,
+      "win_rate": 0.488,
+      "goals_for": 282,
+      "goals_against": 269,
+      "goal_diff": 13,
+      "target_year": 1996,
+      "future_win_rate": 0.317,
+      "future_median": 0.427,
+      "target": 0,
+      "previous_win_rate": 0.562
+    }
+  ]
+}

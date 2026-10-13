@@ -1,0 +1,17 @@
+{
+  "model": "Логистическая регрессия",
+  "features": [
+    "win_rate",
+    "goal_diff"
+  ],
+  "C": 1.0,
+  "solver": "lbfgs",
+  "max_iter": 1000,
+  "random_state": 42,
+  "imputer": "median (train only)",
+  "scaler": "StandardScaler (train only)",
+  "threshold": 0.5,
+  "validation_roc_auc": 0.7720364741641338,
+  "selection_rule": "Наибольший validation ROC-AUC; при равенстве исходная модель",
+  "fit_data": "train only; no refit after selection"
+}

@@ -1,0 +1,201 @@
+{
+  "url": "https://www.scrapethissite.com/pages/forms/",
+  "collected_at": "2026-10-13T15:38:08.102748+03:00",
+  "pages_processed": 24,
+  "rows": 582,
+  "sha256": "84563b67ded277c14800ee031fecce699013f105379fe038ee0926585afb0f89",
+  "pages": [
+    {
+      "page": 1,
+      "rows": 25,
+      "first_team": "Boston Bruins",
+      "first_year": 1990,
+      "last_team": "Chicago Blackhawks",
+      "last_year": 1991
+    },
+    {
+      "page": 2,
+      "rows": 25,
+      "first_team": "Detroit Red Wings",
+      "first_year": 1991,
+      "last_team": "Hartford Whalers",
+      "last_year": 1992
+    },
+    {
+      "page": 3,
+      "rows": 25,
+      "first_team": "Los Angeles Kings",
+      "first_year": 1992,
+      "last_team": "Edmonton Oilers",
+      "last_year": 1993
+    },
+    {
+      "page": 4,
+      "rows": 25,
+      "first_team": "Florida Panthers",
+      "first_year": 1993,
+      "last_team": "Detroit Red Wings",
+      "last_year": 1994
+    },
+    {
+      "page": 5,
+      "rows": 25,
+      "first_team": "Edmonton Oilers",
+      "first_year": 1994,
+      "last_team": "Colorado Avalanche",
+      "last_year": 1995
+    },
+    {
+      "page": 6,
+      "rows": 25,
+      "first_team": "Dallas Stars",
+      "first_year": 1995,
+      "last_team": "Chicago Blackhawks",
+      "last_year": 1996
+    },
+    {
+      "page": 7,
+      "rows": 25,
+      "first_team": "Colorado Avalanche",
+      "first_year": 1996,
+      "last_team": "Calgary Flames",
+      "last_year": 1997
+    },
+    {
+      "page": 8,
+      "rows": 25,
+      "first_team": "Carolina Hurricanes",
+      "first_year": 1997,
+      "last_team": "Buffalo Sabres",
+      "last_year": 1998
+    },
+    {
+      "page": 9,
+      "rows": 25,
+      "first_team": "Calgary Flames",
+      "first_year": 1998,
+      "last_team": "Mighty Ducks of Anaheim",
+      "last_year": 1999
+    },
+    {
+      "page": 10,
+      "rows": 25,
+      "first_team": "Atlanta Thrashers",
+      "first_year": 1999,
+      "last_team": "Toronto Maple Leafs",
+      "last_year": 1999
+    },
+    {
+      "page": 11,
+      "rows": 25,
+      "first_team": "Vancouver Canucks",
+      "first_year": 1999,
+      "last_team": "Phoenix Coyotes",
+      "last_year": 2000
+    },
+    {
+      "page": 12,
+      "rows": 25,
+      "first_team": "Pittsburgh Penguins",
+      "first_year": 2000,
+      "last_team": "New Jersey Devils",
+      "last_year": 2001
+    },
+    {
+      "page": 13,
+      "rows": 25,
+      "first_team": "New York Islanders",
+      "first_year": 2001,
+      "last_team": "Florida Panthers",
+      "last_year": 2002
+    },
+    {
+      "page": 14,
+      "rows": 25,
+      "first_team": "Los Angeles Kings",
+      "first_year": 2002,
+      "last_team": "Chicago Blackhawks",
+      "last_year": 2003
+    },
+    {
+      "page": 15,
+      "rows": 25,
+      "first_team": "Colorado Avalanche",
+      "first_year": 2003,
+      "last_team": "Boston Bruins",
+      "last_year": 2005
+    },
+    {
+      "page": 16,
+      "rows": 25,
+      "first_team": "Buffalo Sabres",
+      "first_year": 2005,
+      "last_team": "Toronto Maple Leafs",
+      "last_year": 2005
+    },
+    {
+      "page": 17,
+      "rows": 25,
+      "first_team": "Vancouver Canucks",
+      "first_year": 2005,
+      "last_team": "Phoenix Coyotes",
+      "last_year": 2006
+    },
+    {
+      "page": 18,
+      "rows": 25,
+      "first_team": "Pittsburgh Penguins",
+      "first_year": 2006,
+      "last_team": "New Jersey Devils",
+      "last_year": 2007
+    },
+    {
+      "page": 19,
+      "rows": 25,
+      "first_team": "New York Islanders",
+      "first_year": 2007,
+      "last_team": "Florida Panthers",
+      "last_year": 2008
+    },
+    {
+      "page": 20,
+      "rows": 25,
+      "first_team": "Los Angeles Kings",
+      "first_year": 2008,
+      "last_team": "Chicago Blackhawks",
+      "last_year": 2009
+    },
+    {
+      "page": 21,
+      "rows": 25,
+      "first_team": "Colorado Avalanche",
+      "first_year": 2009,
+      "last_team": "Boston Bruins",
+      "last_year": 2010
+    },
+    {
+      "page": 22,
+      "rows": 25,
+      "first_team": "Buffalo Sabres",
+      "first_year": 2010,
+      "last_team": "Toronto Maple Leafs",
+      "last_year": 2010
+    },
+    {
+      "page": 23,
+      "rows": 25,
+      "first_team": "Vancouver Canucks",
+      "first_year": 2010,
+      "last_team": "Pittsburgh Penguins",
+      "last_year": 2011
+    },
+    {
+      "page": 24,
+      "rows": 7,
+      "first_team": "San Jose Sharks",
+      "first_year": 2011,
+      "last_team": "Winnipeg Jets",
+      "last_year": 2011
+    }
+  ]
+}
